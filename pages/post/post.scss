@@ -1,0 +1,50 @@
+@use "../../scss/fonts";
+@use "../../scss/mobile";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-header {
+  background-color: var(--color-grey-600);
+  padding: 40px 0px;
+
+  h2 {
+    max-width: 45ch;
+    @include fonts.font-1-sb;
+    margin-bottom: 32px;
+
+    @include mobile.d(m) {
+      @include fonts.font-2-b;
+    }
+  }
+
+  p {
+    color: var(--color-grey-200);
+    @include fonts.font-4-r;
+
+    @include mobile.d(m) {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.post-body {
+  .image img {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  p {
+    line-height: 1.5rem;
+    color: var(--color-grey-200);
+    @include fonts.font-4-r;
+
+    @include mobile.d(m) {
+      font-size: 0.875rem;
+    }
+  }
+}

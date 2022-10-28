@@ -1,0 +1,36 @@
+.btn {
+	display: block;
+	cursor: pointer;
+	padding: 0.5rem 1.3rem;
+	border-radius: 32px;
+	border: none;
+	@include fonts.font-4-sb;
+
+	&.grey {
+		color: var(--color-grey-200);
+		background-color: var(--color-grey-600);
+
+		&:hover {
+			background-color: var(--color-grey-500);
+		}
+	}
+
+	&.greyDark {
+		color: var(--color-grey-600);
+		background-color: var(--color-grey-200);
+
+		&:hover {
+			color: var(--color-grey-700);
+			background-color: var(--color-grey-300);
+		}
+	}
+
+	&.primary {
+		color: var(--color-grey-700);
+		background-color: var(--color-brand-100);
+
+		&:hover {
+			background-color: var(--color-brand-200);
+		}
+	}
+}
