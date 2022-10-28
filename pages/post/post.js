@@ -70,7 +70,7 @@ export default function initPost() {
         target.classList.add("primary");
 
         localStorage.setItem("category", JSON.stringify(target.innerText));
-        window.location.href = "../home/home.html";
+        window.location.href = "/index.html";
       }
     }
   };
